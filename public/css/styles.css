@@ -30,7 +30,7 @@ main {
 /* Styles for Header (Partials/Header.EJS)*/
 header {
     background-color: #114d1d;
-    color: #f7f5f5;
+    color: #fae7e7;
     padding: 15px 20px;
     display: flex;
     justify-content: space-between;
@@ -59,13 +59,13 @@ header nav li {
 }
 
 header nav a {
-    color: #fff;
+    color: #f7dada;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 header nav a:hover {
-    color: #ddd;
+    color: #bef1c5;
 }
 
 /* Navigation Styles (Partials/Navigation.EJS) */
@@ -93,7 +93,7 @@ nav li {
 /* Styles for the links within the list items */
 nav li a {
   text-decoration: none; /* Removes the default underline from the links */
-  color: #495057; /* A darker shade of gray for the link text */
+  color: #b3c4d4; /* A darker shade of gray for the link text */
   font-weight: 500; /* Makes the font slightly bolder */
   transition: color 0.3s ease-in-out; /* Smooth transition for the color change on hover */
 }
