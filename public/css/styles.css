@@ -14,11 +14,11 @@ body {
     color: #273C2C; /* Dark Green */
 }
 
-#wrapper {
+/* #wrapper {
     display: flex;
     flex-direction: column;
     min-height: 100vh; /* Ensures the wrapper takes up the full viewport height */
-}
+/* } */
 
 main {
     flex-grow: 1; /* Allows the main area to grow and take up remaining space */
@@ -76,7 +76,7 @@ nav {
 }
 
 nav ul {
-    list-style: none;
+    list-style: inside;
     padding: 0;
     margin: 0;
     display: flex;
