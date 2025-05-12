@@ -1,4 +1,4 @@
-/* Global Styles and reset */
+/* Global styles and reset */
 *,
 *::before,
 *::after {
@@ -17,29 +17,29 @@ body {
 #wrapper {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Keep wrapper in total viewport */
+    min-height: 100vh; /* Ensures the wrapper takes up the full viewport height */
 }
 
 main {
-    flex-grow: 1; /* main size */
+    flex-grow: 1; /* Allows the main area to grow and take up remaining space */
     padding: 20px;
-    margin-top: 60px; /* Adjust to the height of the fixed header, if any */
-    margin-bottom: 50px; /* Adjust to the height of the fixed footer, if any */
+    margin-top: 60px; /* Adjustment for the fixed header height, if any */
+    margin-bottom: 50px; /* Adjustment for the fixed footer height, if any */
 }
 
-/* Styles for Header (Partials/Header.EJS)*/
+/* Styles for the header (partials/header.ejs) */
 header {
-    background-color: #114d1d;
-    color: #fae7e7;
+    background-color: #333;
+    color: #fff;
     padding: 15px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed; /* Fix the header at the top */
+    position: fixed; /* Fixes the header to the top */
     top: 0;
     left: 0;
     right: 0;
-    z-index: 100; /* Ensures that the header is above other elements */
+    z-index: 100; /* Ensures the header stays above other elements */
 }
 
 header h1 {
@@ -48,7 +48,7 @@ header h1 {
 }
 
 header nav ul {
-    list-style: square;
+    list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
@@ -59,80 +59,51 @@ header nav li {
 }
 
 header nav a {
-    color: #f7dada;
+    color: #fff;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 header nav a:hover {
-    color: #bef1c5;
+    color: #ddd;
 }
 
-/* Navigation Styles (Partials/Navigation.EJS) */
-/* Styles for the navigation bar */
+/* Styles for the navigation (partials/navigation.ejs) */
 nav {
-  background-color: #f8f9fa; /* A very light gray background */
-  padding: 15px 20px; /* Adds internal spacing (top/bottom, left/right) */
-  border-bottom: 1px solid #dee2e6; /* A subtle line at the bottom to separate from content */
+    background-color: #eee;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
 }
 
-/* Styles for the unordered list that contains the navigation items */
 nav ul {
-  list-style: none; /* Removes the default bullet points from the list */
-  padding: 0; /* Resets any default padding on the list */
-  margin: 0; /* Resets any default margin on the list */
-  display: flex; /* Arranges the list items in a row */
-  gap: 20px; /* Adds spacing between the list items */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
 }
 
-/* Styles for each list item (not strictly necessary here, but can be used for specific item styling) */
-nav li {
-  /* No specific styles applied for now, inherits from the ul */
-}
-
-/* Styles for the links within the list items */
 nav li a {
-  text-decoration: none; /* Removes the default underline from the links */
-  color: #b3c4d4; /* A darker shade of gray for the link text */
-  font-weight: 500; /* Makes the font slightly bolder */
-  transition: color 0.3s ease-in-out; /* Smooth transition for the color change on hover */
+    color: #555;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
-/* Styles for the links when the user hovers their mouse over them */
 nav li a:hover {
-  color: #007bff; /* A vibrant blue color to highlight the link on hover */
+    color: #007bff; /* Highlight color on mouse hover */
 }
 
-/* Responsive styles for smaller screens (tablets and smartphones) */
-@media (max-width: 768px) {
-  /* On screens smaller than 768 pixels wide */
-  nav ul {
-      flex-direction: column; /* Stack the list items vertically */
-      align-items: flex-start; /* Align the items to the left */
-      gap: 10px; /* Reduce the spacing between the stacked items */
-  }
-
-  nav li {
-      width: 100%; /* Make each list item take up the full width of the container */
-  }
-
-  nav li a {
-      display: block; /* Makes the link a block-level element, taking up the full width for easier clicking/tapping */
-      padding: 10px 0; /* Adds vertical padding to the links */
-  }
-}
-
-/* Styles for the Footer (Partials/Footer.EJS) */
+/* Styles for the footer (partials/footer.ejs) */
 footer {
-    background-color: #114d1d;
+    background-color: #333;
     color: #fff;
     text-align: center;
     padding: 15px 20px;
-    position: fixed; /* Fix the footer at the bottom */
+    position: fixed; /* Fixes the footer to the bottom */
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: 100; /* Ensures that the footer is above other elements */
+    z-index: 100; /* Ensures the footer stays above other elements */
     font-size: 0.9em;
 }
 
@@ -164,7 +135,8 @@ footer {
     }
 
     main {
-        padding: 15px;Margin-top: 110px; /*Higher adjustment for the stacked header */
-        Margin-Bottom: 100px; /*Higher adjustment for fixed footer */
+        padding: 15px;
+        margin-top: 110px; /* Larger adjustment for the stacked header */
+        margin-bottom: 100px; /* Larger adjustment for the fixed footer */
     }
 }
