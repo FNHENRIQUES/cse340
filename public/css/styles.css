@@ -10,8 +10,8 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #A4B494; /* Light Olive Green */
+    color: #273C2C; /* Dark Green */
 }
 
 #wrapper {
@@ -23,14 +23,14 @@ body {
 main {
     flex-grow: 1; /* Allows the main area to grow and take up remaining space */
     padding: 20px;
-    margin-top: 60px; /* Adjustment for the fixed header height, if any */
-    margin-bottom: 50px; /* Adjustment for the fixed footer height, if any */
+    margin-top: 60px; /* Adjustment for the fixed header height */
+    margin-bottom: 50px; /* Adjustment for the fixed footer height */
 }
 
 /* Styles for the header (partials/header.ejs) */
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: #0A2463; /* Dark Blue */
+    color: #53D8FB; /* Light Blue */
     padding: 15px 20px;
     display: flex;
     justify-content: space-between;
@@ -59,20 +59,20 @@ header nav li {
 }
 
 header nav a {
-    color: #fff;
+    color: #53D8FB; /* Light Blue */
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 header nav a:hover {
-    color: #ddd;
+    color: #F97068; /* Salmon Red */
 }
 
 /* Styles for the navigation (partials/navigation.ejs) */
 nav {
-    background-color: #eee;
+    background-color: #A4B494; /* Light Olive Green */
     padding: 10px 20px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 2px solid #273C2C; /* Dark Green border */
 }
 
 nav ul {
@@ -84,19 +84,19 @@ nav ul {
 }
 
 nav li a {
-    color: #555;
+    color: #0A2463; /* Dark Blue */
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 nav li a:hover {
-    color: #007bff; /* Highlight color on mouse hover */
+    color: #F97068; /* Salmon Red */
 }
 
 /* Styles for the footer (partials/footer.ejs) */
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #0A2463; /* Dark Blue */
+    color: #53D8FB; /* Light Blue */
     text-align: center;
     padding: 15px 20px;
     position: fixed; /* Fixes the footer to the bottom */
