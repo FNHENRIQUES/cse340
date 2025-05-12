@@ -30,7 +30,7 @@ main {
 /* Styles for Header (Partials/Header.EJS)*/
 header {
     background-color: #114d1d;
-    color: #fff;
+    color: #f7f5f5;
     padding: 15px 20px;
     display: flex;
     justify-content: space-between;
@@ -48,7 +48,7 @@ header h1 {
 }
 
 header nav ul {
-    list-style: none;
+    list-style: square;
     padding: 0;
     margin: 0;
     display: flex;
@@ -69,28 +69,57 @@ header nav a:hover {
 }
 
 /* Navigation Styles (Partials/Navigation.EJS) */
+/* Styles for the navigation bar */
 nav {
-    background-color: #eee;
-    padding: 10px 20px;
-    border-bottom: 1px solid #ddd;
+  background-color: #f8f9fa; /* A very light gray background */
+  padding: 15px 20px; /* Adds internal spacing (top/bottom, left/right) */
+  border-bottom: 1px solid #dee2e6; /* A subtle line at the bottom to separate from content */
 }
 
+/* Styles for the unordered list that contains the navigation items */
 nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    gap: 15px;
+  list-style: none; /* Removes the default bullet points from the list */
+  padding: 0; /* Resets any default padding on the list */
+  margin: 0; /* Resets any default margin on the list */
+  display: flex; /* Arranges the list items in a row */
+  gap: 20px; /* Adds spacing between the list items */
 }
 
+/* Styles for each list item (not strictly necessary here, but can be used for specific item styling) */
+nav li {
+  /* No specific styles applied for now, inherits from the ul */
+}
+
+/* Styles for the links within the list items */
 nav li a {
-    color: #555;
-    text-decoration: none;
-    transition: color 0.3s ease;
+  text-decoration: none; /* Removes the default underline from the links */
+  color: #495057; /* A darker shade of gray for the link text */
+  font-weight: 500; /* Makes the font slightly bolder */
+  transition: color 0.3s ease-in-out; /* Smooth transition for the color change on hover */
 }
 
+/* Styles for the links when the user hovers their mouse over them */
 nav li a:hover {
-    color: #007bff; /* Featured color when passing the mouse */
+  color: #007bff; /* A vibrant blue color to highlight the link on hover */
+}
+
+/* Responsive styles for smaller screens (tablets and smartphones) */
+@media (max-width: 768px) {
+  /* On screens smaller than 768 pixels wide */
+  nav ul {
+      flex-direction: column; /* Stack the list items vertically */
+      align-items: flex-start; /* Align the items to the left */
+      gap: 10px; /* Reduce the spacing between the stacked items */
+  }
+
+  nav li {
+      width: 100%; /* Make each list item take up the full width of the container */
+  }
+
+  nav li a {
+      display: block; /* Makes the link a block-level element, taking up the full width for easier clicking/tapping */
+      padding: 10px 0; /* Adds vertical padding to the links */
+  }
 }
 
 /* Styles for the Footer (Partials/Footer.EJS) */
