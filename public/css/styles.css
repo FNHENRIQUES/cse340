@@ -11,7 +11,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
-    color: #333;
+    color: #114d1d;
 }
 
 #wrapper {
@@ -29,7 +29,7 @@ main {
 
 /* Styles for Header (Partials/Header.EJS)*/
 header {
-    background-color: #333;
+    background-color: #114d1d;
     color: #fff;
     padding: 15px 20px;
     display: flex;
@@ -95,7 +95,7 @@ nav li a:hover {
 
 /* Styles for the Footer (Partials/Footer.EJS) */
 footer {
-    background-color: #333;
+    background-color: #114d1d;
     color: #fff;
     text-align: center;
     padding: 15px 20px;
