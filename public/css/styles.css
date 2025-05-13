@@ -27,7 +27,7 @@ header {
     color: #fff; /* Defines the white color for the Header text */
     padding: 15px 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: normal; /* Aligns the items to the left */
     align-items: center;
     position: fixed; /* Fixes the header to the top */
     top: 0;
@@ -112,11 +112,11 @@ footer {
     font-size: 0.9em;
 }
 
-/* Responsive styles 
+/* Responsive styles */
 @media (max-width: 768px) {
     header {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
     }
 
     header nav {
@@ -125,7 +125,7 @@ footer {
 
     header nav ul {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
     }
 
     header nav li {
@@ -135,13 +135,13 @@ footer {
 
     nav ul {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         gap: 10px;
     }
 
     main {
         padding: 15px;
         margin-top: 110px; /* Larger adjustment for the stacked header */
-        /* margin-bottom: 100px; /* Larger adjustment for the fixed footer 
+        margin-bottom: 100px; /* Larger adjustment for the fixed footer */
     } 
-}*/
+}
