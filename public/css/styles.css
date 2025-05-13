@@ -14,12 +14,6 @@ body {
     color: #273C2C; /* Dark Green */
 }
 
-/* #wrapper {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* Ensures the wrapper takes up the full viewport height */
-/* } */
-
 main {
     flex-grow: 1; /* Allows the main area to grow and take up remaining space */
     padding: 20px;
@@ -30,7 +24,7 @@ main {
 /* Styles for the header (partials/header.ejs) */
 header {
     background-color: #0A2463; /* Dark Blue */
-    color: #53D8FB; /* Light Blue */
+    color: #fff; /* Defines the white color for the Header text */
     padding: 15px 20px;
     display: flex;
     justify-content: space-between;
@@ -45,10 +39,21 @@ header {
 header h1 {
     font-size: 1.5em;
     margin: 0;
+    color: inherit; /* Inherits the white color of the Header */
+}
+
+header a {
+    color: inherit; /* Inherits the white color of the Header for the links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+header a:hover {
+    color: #F97068; /* Salmon Red */
 }
 
 header nav ul {
-    list-style: none;
+    list-style: none; /* Removes the markers from the Header navigation list*/
     padding: 0;
     margin: 0;
     display: flex;
@@ -59,7 +64,7 @@ header nav li {
 }
 
 header nav a {
-    color: #53D8FB; /* Light Blue */
+    color: inherit; /* Inherits the white color of the Header for the navigation links */
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -76,10 +81,10 @@ nav {
 }
 
 nav ul {
-    list-style: inside;
+    list-style: none; /* Guarantees that there are no markers in the main navigation list */
     padding: 0;
     margin: 0;
-    display: flex;
+    display: flex; /* Ensures that the items on the list are in line */
     gap: 15px;
 }
 
