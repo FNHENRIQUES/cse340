@@ -112,7 +112,7 @@ footer {
     font-size: 0.9em;
 }
 
-/* Responsive styles */
+/* Responsive styles 
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -142,6 +142,6 @@ footer {
     main {
         padding: 15px;
         margin-top: 110px; /* Larger adjustment for the stacked header */
-        margin-bottom: 100px; /* Larger adjustment for the fixed footer */
-    }
-}
+        /* margin-bottom: 100px; /* Larger adjustment for the fixed footer 
+    } 
+}*/
