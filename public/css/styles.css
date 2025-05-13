@@ -27,7 +27,7 @@ header {
     color: #fff; /* Defines the white color for the Header text */
     padding: 15px 20px;
     display: flex;
-    justify-content: normal; /* Aligns the items to the left */
+    justify-content: space-between; /* Aligns the items to the left */
     align-items: center;
     position: fixed; /* Fixes the header to the top */
     top: 0;
@@ -52,27 +52,6 @@ header a:hover {
     color: #F97068; /* Salmon Red */
 }
 
-header nav ul {
-    list-style: none; /* Removes the markers from the Header navigation list*/
-    padding: 0;
-    margin: 0;
-    display: flex;
-}
-
-header nav li {
-    margin-left: 20px;
-}
-
-header nav a {
-    color: inherit; /* Inherits the white color of the Header for the navigation links */
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-header nav a:hover {
-    color: #F97068; /* Salmon Red */
-}
-
 /* Styles for the navigation (partials/navigation.ejs) */
 nav {
     background-color: #A4B494; /* Light Olive Green */
@@ -81,9 +60,9 @@ nav {
 }
 
 nav ul {
-    list-style: none; /* Guarantees that there are no markers in the main navigation list */
-    padding: 0;
-    margin: 0;
+    list-style: square inside url("sqpurple.gif");  /* Adds a square bullet point */  
+    padding: 10px;
+    margin: 10px;
     display: flex; /* Ensures that the items on the list are in line */
     gap: 15px;
 }
@@ -125,7 +104,7 @@ footer {
 
     header nav ul {
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
     }
 
     header nav li {
@@ -135,7 +114,7 @@ footer {
 
     nav ul {
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         gap: 10px;
     }
 
