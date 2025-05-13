@@ -27,13 +27,13 @@ header {
     color: #fff; /* Defines the white color for the Header text */
     padding: 15px 20px;
     display: flex;
-    justify-content: space-between; /* Aligns the items to the left */
+    justify-content: space-between;
     align-items: center;
     position: fixed; /* Fixes the header to the top */
     top: 0;
     left: 0;
     right: 0;
-    z-index: 100; /* Ensures the header stays above other elements */
+    z-index: 100; /* Ensures that the header is above other elements */
 }
 
 header h1 {
@@ -57,13 +57,17 @@ nav {
     background-color: #A4B494; /* Light Olive Green */
     padding: 10px 20px;
     border-bottom: 2px solid #273C2C; /* Dark Green border */
+    /* Adicione um position e um z-index alto */
+    position: sticky; /* Ou 'fixed' dependendo do seu layout */
+    top: 60px; /* Ajuste para a altura do seu header fixo */
+    z-index: 110; /* Um valor maior que o z-index do header */
 }
 
 nav ul {
-    list-style: square inside url("sqpurple.gif");  /* Adds a square bullet point */  
-    padding: 10px;
-    margin: 10px;
-    display: flex; /* Ensures that the items on the list are in line */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
     gap: 15px;
 }
 
@@ -76,6 +80,7 @@ nav li a {
 nav li a:hover {
     color: #F97068; /* Salmon Red */
 }
+
 
 /* Styles for the footer (partials/footer.ejs) */
 footer {
