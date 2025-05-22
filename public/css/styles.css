@@ -57,10 +57,10 @@ nav {
     background-color: #A4B494; /* Light Olive Green */
     padding: 10px 20px;
     border-bottom: 2px solid #273C2C; /* Dark Green border */
-    /* Adicione um position e um z-index alto */
-    position: sticky; /* Ou 'fixed' dependendo do seu layout */
-    top: 60px; /* Ajuste para a altura do seu header fixo */
-    z-index: 110; /* Um valor maior que o z-index do header */
+    /* Add a position and a high z-index*/
+    position: sticky; /* Or 'fixed' depending on your layout */
+    top: 60px; /* Adjust to the height of your fixed header */
+    z-index: 110; /*A higher value than the Header Z-Index*/
 }
 
 nav ul {

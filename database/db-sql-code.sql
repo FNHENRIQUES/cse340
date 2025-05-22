@@ -1,3 +1,8 @@
+--
+-- Database: 'cse340db project', .public schema
+-- 
+
+-- Create cliente_type data type
 CREATE TYPE public.sample AS ENUM
     ('first-value', 'second-value', 'third_value');
 
@@ -54,4 +59,3 @@ INSERT INTO public.classification (classification_name) VALUES
 ('SUV'),
 ('Truck'),
 ('Sedan');
-
